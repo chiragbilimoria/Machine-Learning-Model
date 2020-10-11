@@ -16,7 +16,9 @@
 
 # Here I am writing a python code to identify medical code from given string. This case study is related to EHR(electronic health records). 
 # Here in Patients records we get a string which contains medical codes and its description. 
-# So I am building a custom NER model which tells us what is code and what is description in given string
+# So I am building a custom NER (Name Entity Recognition) model which tells us what is code and what is description in given string
+# NER helps us in finding named entities in the given string. For example India started manufacturing apple phones. So when we pass this string it will identify India as Geopolitical Entity and Apple are Org
+# So with customizing NER module from en_core_web_sm library we can predict the what we want to capture from gievn string and use it according to our use case. I am using it for EHR use case
 # Here usually the EHR data description is wrongly written and with identifying code 
 # we can identify correct description for given medical code which helps us to determine what disease a patient is diagnosed with.
 # This model predicts codes very well if code is either present in beginning or end of string
